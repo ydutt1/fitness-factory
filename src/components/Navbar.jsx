@@ -15,9 +15,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-[var(--color-bg)]/90 backdrop-blur-md border-b border-[var(--color-surface-2)]' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-[var(--color-bg)]/90 backdrop-blur-md border-b border-[var(--color-surface-2)]' : 'bg-transparent'
+        }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 md:px-8 h-16 md:h-20">
         <a href="#home" className="flex items-center gap-2 font-display text-lg tracking-tight">
@@ -36,10 +35,12 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#membership"
+          href="https://wa.me/919412157363"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:inline-block bg-[var(--color-accent)] text-black font-semibold px-5 py-2 rounded-full text-sm hover:bg-white transition-colors"
         >
-          Join Now
+          Contact Us
         </a>
 
         <button
@@ -71,11 +72,13 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#membership"
+              href="https://wa.me/919412157363"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 bg-[var(--color-accent)] text-black font-semibold px-5 py-3 rounded-full text-center"
             >
-              Join Now
+              Contact Us
             </a>
           </motion.div>
         )}

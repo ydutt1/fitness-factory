@@ -2,13 +2,6 @@ import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 
 export default function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Frontend-only form. Hook this up to an email service (e.g. Formspree, EmailJS)
-    // or a backend endpoint when ready.
-    alert('Thanks! We will get back to you shortly.')
-    e.target.reset()
-  }
 
   return (
     <section id="contact" className="py-20 md:py-28 px-5 md:px-8">
@@ -79,50 +72,25 @@ export default function Contact() {
             </a>
           </motion.div>
 
-          <motion.form
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            onSubmit={handleSubmit}
-            className="bg-[var(--color-surface)] rounded-2xl p-6 md:p-8 space-y-4 border border-[var(--color-surface-2)]"
+            className="bg-[var(--color-surface)] rounded-2xl p-6 md:p-8 space-y-8 border border-[var(--color-surface-2)] flex flex-col items-center justify-center text-center"
           >
-            <div>
-              <label htmlFor="name" className="text-sm text-[var(--color-text-dim)]">Name</label>
-              <input
-                id="name"
-                name="name"
-                required
-                type="text"
-                className="w-full mt-1 bg-[var(--color-surface-2)] border border-[var(--color-surface-2)] rounded-lg px-4 py-2.5 outline-none focus:border-[var(--color-accent)]"
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="text-sm text-[var(--color-text-dim)]">Phone</label>
-              <input
-                id="phone"
-                name="phone"
-                required
-                type="tel"
-                className="w-full mt-1 bg-[var(--color-surface-2)] border border-[var(--color-surface-2)] rounded-lg px-4 py-2.5 outline-none focus:border-[var(--color-accent)]"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="text-sm text-[var(--color-text-dim)]">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="w-full mt-1 bg-[var(--color-surface-2)] border border-[var(--color-surface-2)] rounded-lg px-4 py-2.5 outline-none focus:border-[var(--color-accent)] resize-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-[var(--color-accent)] text-black font-semibold py-3 rounded-full hover:bg-white transition-colors"
+            <h3 className="font-display text-2xl uppercase">Ready to Start?</h3>
+            <p className="text-[var(--color-text-dim)] uppercase tracking-widest text-sm">Founded. Fitness Factory year 2000</p>
+            <a
+              href="https://wa.me/919412157363"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-[var(--color-accent)] text-black font-semibold py-4 rounded-full hover:bg-white transition-colors text-lg flex items-center justify-center gap-2 mt-4"
             >
-              Send Message
-            </button>
-          </motion.form>
+              <MessageCircle size={24} />
+              Contact Us
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

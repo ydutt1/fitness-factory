@@ -52,10 +52,12 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="#contact"
+            href="https://wa.me/919412157363"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[var(--color-accent)] text-black font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors"
           >
-            Join Now
+            Contact Us
           </a>
           <a
             href="#membership"

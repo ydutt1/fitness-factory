@@ -25,11 +25,10 @@ export default function Membership() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               whileHover={{ y: -6 }}
-              className={`relative rounded-2xl p-7 flex flex-col border ${
-                plan.recommended
+              className={`relative rounded-2xl p-7 flex flex-col border ${plan.recommended
                   ? 'bg-[var(--color-accent)] text-black border-transparent'
                   : 'bg-[var(--color-surface)] border-[var(--color-surface-2)]'
-              }`}
+                }`}
             >
               {plan.recommended && (
                 <span className="absolute -top-3 right-6 bg-black text-[var(--color-accent)] text-xs font-semibold px-3 py-1 rounded-full">
@@ -55,20 +54,20 @@ export default function Membership() {
 
               <div className="flex flex-col gap-2">
                 <a
-                  href="#contact"
-                  className={`text-center font-semibold py-2.5 rounded-full transition-colors ${
-                    plan.recommended
+                  href="https://wa.me/919412157363"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-center font-semibold py-2.5 rounded-full transition-colors ${plan.recommended
                       ? 'bg-black text-white hover:bg-white hover:text-black'
                       : 'bg-[var(--color-accent)] text-black hover:bg-white'
-                  }`}
+                    }`}
                 >
-                  Join Now
+                  Contact Us
                 </a>
                 <a
                   href="tel:+919412157363"
-                  className={`text-center font-medium py-2.5 rounded-full border flex items-center justify-center gap-2 text-sm ${
-                    plan.recommended ? 'border-black/30' : 'border-[var(--color-surface-2)] text-[var(--color-text-dim)]'
-                  }`}
+                  className={`text-center font-medium py-2.5 rounded-full border flex items-center justify-center gap-2 text-sm ${plan.recommended ? 'border-black/30' : 'border-[var(--color-surface-2)] text-[var(--color-text-dim)]'
+                    }`}
                 >
                   <Phone size={14} /> Call Now
                 </a>
