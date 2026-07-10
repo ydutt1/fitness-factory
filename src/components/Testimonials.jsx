@@ -64,7 +64,7 @@ export default function Testimonials() {
 
         <div className="text-center mt-4">
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/RCWdzmF614sQqZA2A"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-[var(--color-surface-2)] hover:bg-white/10 transition-colors text-sm font-medium px-6 py-3 rounded-full"

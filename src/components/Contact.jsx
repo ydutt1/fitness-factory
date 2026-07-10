@@ -43,7 +43,7 @@ export default function Contact() {
               </a>
               <div className="flex items-center gap-4">
                 <MapPin size={20} className="text-[var(--color-accent)]" />
-                <span className="text-[var(--color-text-dim)]">Your Gym Address, City, State</span>
+                <span className="text-[var(--color-text-dim)]">G-17, near Shiv Mandir Road, C Cluster, Shivalik Nagar, Haridwar, Uttarakhand 249403</span>
               </div>
               <div className="flex items-center gap-4">
                 <Clock size={20} className="text-[var(--color-accent)]" />
@@ -63,7 +63,7 @@ export default function Contact() {
               />
             </div>
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/RCWdzmF614sQqZA2A"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-sm font-medium border border-[var(--color-surface-2)] hover:bg-white/10 transition-colors px-5 py-2.5 rounded-full"
