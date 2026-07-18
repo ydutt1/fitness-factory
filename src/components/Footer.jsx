@@ -1,5 +1,5 @@
 import { Dumbbell } from 'lucide-react'
-import { Instagram, Facebook, Youtube } from './SocialIcons'
+import { Instagram, Facebook } from './SocialIcons'
 import { navLinks } from '../data/nav'
 
 export default function Footer() {
@@ -15,14 +15,11 @@ export default function Footer() {
             A modern gym built for real, honest results.
           </p>
           <div className="flex gap-4 mt-4">
-            <a href="#" aria-label="Instagram" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
+            <a href="https://www.instagram.com/fitnesfactorygym/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
               <Instagram size={20} />
             </a>
-            <a href="#" aria-label="Facebook" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
+            <a href="https://www.facebook.com/FITNESSFACTORY" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
               <Facebook size={20} />
-            </a>
-            <a href="#" aria-label="YouTube" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
-              <Youtube size={20} />
             </a>
           </div>
         </div>
@@ -43,8 +40,8 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4 text-sm tracking-wide">LOCATION</h4>
           <p className="text-[var(--color-text-dim)] text-sm leading-relaxed">
-            Your Gym Address,
-            <br /> City, State, PIN
+            G-17 Shivalik Nagar , Near Shiv Mandir
+            <br /> Ranipur, Haridwar, Uttarakhand 249403
           </p>
         </div>
 

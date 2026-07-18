@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { Instagram, Facebook, Youtube } from './SocialIcons'
+import { Instagram, Facebook } from './SocialIcons'
 
 const timeline = [
-  { year: '1994', text: 'Started coaching at a local sports club.' },
-  { year: '2003', text: 'Certified as a national-level strength & conditioning coach.' },
-  { year: '2012', text: 'Founded Fitness Factory.' },
+  { year: '1995', text: 'Started training himself .' },
+  { year: '2000', text: 'Founded Fitness Factory.' },
+  { year: '2012', text: 'Opened a new branch.' },
   { year: 'Today', text: 'Trained 1000+ members across all fitness levels.' },
 ]
 
@@ -71,14 +71,11 @@ export default function Trainer() {
           </div>
 
           <div className="flex gap-4">
-            <a href="#" aria-label="Instagram" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
+            <a href="https://www.instagram.com/fitnesfactorygym/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
               <Instagram size={22} />
             </a>
-            <a href="#" aria-label="Facebook" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
+            <a href="https://www.facebook.com/FITNESSFACTORY" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
               <Facebook size={22} />
-            </a>
-            <a href="#" aria-label="YouTube" className="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">
-              <Youtube size={22} />
             </a>
           </div>
         </motion.div>
